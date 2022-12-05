@@ -1,0 +1,9 @@
+# task runner depednencies
+.env
+__pycache__
+
+# project dependencies
+node_modules
+
+# compiled JS
+dist/*
