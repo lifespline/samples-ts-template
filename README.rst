@@ -1,6 +1,6 @@
-Arteklabs Skillset: TS Samples
+Arteklabs Skillset: TS Template
 ==============================
 
-Welcome to the ``arteklabs`` typescript samples.
+Welcome to the ``arteklabs`` typescript template.
 
-Read the docs `here <https://lifespline.github.io/samples-ts/>`_.
+Read the docs `here <https://lifespline.github.io/samples-ts-template/>`_.
