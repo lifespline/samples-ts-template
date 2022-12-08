@@ -9,7 +9,7 @@ from pathlib import Path
 docs_docker_image = 'python:3.8'
 docs_debug_container_name = 'samples_ts_template_docs'
 sphinx_server_default_port = '8000'
-docker_host_sphinx_server_default_port = '8001'
+docker_host_sphinx_server_default_port = '8004'
 docs_debug_mnt_path = f"{os.getcwd()}/docs/sphinx/_build/html"
 docs_debug_container_path = "/root"
 
@@ -139,7 +139,16 @@ def docs(ctx, step='build', port=docker_host_sphinx_server_default_port, verbose
             {docs_debug_container_name} \
             python -m http.server
         """
-        ctx.run(cmd)
+        
+        if verbose:
+            ctx.run(cmd)
+        else:
+            ctx.run(cmd, hide='both')
+
+        print('local sphinx run: OK')
+        print(f'container: {docs_debug_container_name}')
+        print(f'host: http://0.0.0.0:{docker_host_sphinx_server_default_port}')
+        print('stop: inv docs --stop')
 
     if step == 'stop':
         ctx.run(f'docker stop {docs_debug_container_name}')

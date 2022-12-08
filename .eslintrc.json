@@ -1,0 +1,12 @@
+{
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "parser": "@babel/eslint-parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-unexpected-multiline": "error"
+    }
+}

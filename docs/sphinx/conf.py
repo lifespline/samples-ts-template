@@ -10,8 +10,8 @@ sys.path.insert(0, os.path.abspath('../..')) # task runner docs
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Arteklabs Skillset: TS Template'
-copyright = '2022, lifespline'
+project = 'Arteklobs Skillset: TS Template'
+copyright = '2022, Arteklabs'
 author = 'arteklabs'
 release = '1.0.0-beta'
 

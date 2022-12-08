@@ -15,7 +15,6 @@ To contribute to this sample *TODO*
    contributing/installation
    contributing/configuration
    contributing/usage
-   contributing/agile
    contributing/docs
    contributing/contributing
    contributing/changelog
