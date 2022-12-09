@@ -1,5 +1,5 @@
-Arteklabs Skillset: TS Template
-==============================
+Arteklabs: TS Template
+======================
 
 Welcome to the ``arteklabs`` typescript template.
 
