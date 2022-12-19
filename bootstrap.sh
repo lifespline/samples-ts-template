@@ -17,56 +17,7 @@ yes | sudo apt autoremove
 # requirements
 npm i
 
-# 3 - install vscode extensions
-extensions=(
-
-    # ts linter
-    "dbaeumer.vscode-eslint"
-
-    # unit test
-    "kavod-io.vscode-jest-test-adapter"
-    "hbenl.vscode-test-explorer"
-
-    # copilot (requires account)
-    "GitHub.copilot"
-
-    # code format (TODO rm one of the below)
-    "esbenp.prettier-vscode"
-    "SimonSiefke.prettier-vscode"
-
-    # md (TODO rm one of the below)
-    "vscode.markdown-language-features"
-    "yzhang.markdown-all-in-one"
-    "DavidAnson.vscode-markdownlint"
-    "vscode.markdown-math"
-
-    # spell checker
-    "streetsidesoftware.code-spell-checker"
-
-    # json
-    "vscode.json-language-features"
-    
-    # csv
-    "mechatroner.rainbow-csv"
-
-    # shell check
-    "timonwong.shellcheck"
-
-    # ts and js
-    "vscode.typescript-language-features"
-
-    # npm
-    "vscode.npm"
-
-    # docker
-    "ms-vscode-remote.remote-containers"
-)
-
-for extension in "${extensions[@]}"; do
-    code --install-extension "$extension" --force
-done
-
-# task runner
+# 3 - task runner
 python3 -m venv .env
 source .env/bin/activate
 pip install -r requirements.txt
